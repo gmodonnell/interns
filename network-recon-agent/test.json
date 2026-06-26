@@ -1,0 +1,543 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260626T005715Z-d71a77e2",
+  "artifact_dir": "/home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2",
+  "scope": [
+    "example.com",
+    "crosswindsystems.com"
+  ],
+  "excludes": [],
+  "started_at": "2026-06-26T00:57:16.060786Z",
+  "finished_at": "2026-06-26T01:03:06.486283Z",
+  "hosts": [
+    {
+      "ip": "104.20.23.154",
+      "hostnames": [],
+      "status": "up",
+      "services": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "https",
+          "product": "cloudflare",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "400 The plain HTTP request was sent to HTTPS port"
+          }
+        },
+        {
+          "port": 2052,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 2053,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-title": "400 The plain HTTP request was sent to HTTPS port",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2082,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 2083,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-title": "400 The plain HTTP request was sent to HTTPS port",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2086,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 2087,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "400 The plain HTTP request was sent to HTTPS port"
+          }
+        },
+        {
+          "port": 2095,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8).",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2096,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-title": "400 The plain HTTP request was sent to HTTPS port",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 8080,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 8443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "https-alt",
+          "product": "cloudflare",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "400 The plain HTTP request was sent to HTTPS port"
+          }
+        },
+        {
+          "port": 8880,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        }
+      ],
+      "os_matches": []
+    },
+    {
+      "ip": "172.66.147.243",
+      "hostnames": [],
+      "status": "up",
+      "services": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8).",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "https",
+          "product": "cloudflare",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "400 The plain HTTP request was sent to HTTPS port"
+          }
+        },
+        {
+          "port": 2052,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 2053,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-title": "400 The plain HTTP request was sent to HTTPS port",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2082,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8).",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2083,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-title": "400 The plain HTTP request was sent to HTTPS port",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2086,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8).",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2087,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-title": "400 The plain HTTP request was sent to HTTPS port",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 2095,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 2096,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx"
+          ],
+          "scripts": {
+            "http-title": "400 The plain HTTP request was sent to HTTPS port",
+            "http-server-header": "cloudflare"
+          }
+        },
+        {
+          "port": 8080,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8)."
+          }
+        },
+        {
+          "port": 8443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "https-alt",
+          "product": "cloudflare",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-server-header": "cloudflare",
+            "http-title": "400 The plain HTTP request was sent to HTTPS port"
+          }
+        },
+        {
+          "port": 8880,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Cloudflare http proxy",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "http-title": "Site doesn't have a title (text/plain; charset=UTF-8).",
+            "http-server-header": "cloudflare"
+          }
+        }
+      ],
+      "os_matches": []
+    },
+    {
+      "ip": "40.160.5.105",
+      "hostnames": [],
+      "status": "up",
+      "services": [
+        {
+          "port": 22,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "ssh",
+          "product": "OpenSSH",
+          "version": "9.6p1 Ubuntu 3ubuntu13.16",
+          "extrainfo": "Ubuntu Linux; protocol 2.0",
+          "cpe": [
+            "cpe:/a:openbsd:openssh:9.6p1",
+            "cpe:/o:linux:linux_kernel"
+          ],
+          "scripts": {
+            "ssh-hostkey": "\n  256 3d:8a:5e:55:76:47:e7:7a:0c:14:29:c1:fd:34:67:e1 (ECDSA)\n  256 3d:4c:c3:4f:f2:cd:9a:2f:4e:a9:d7:a6:05:2e:59:26 (ED25519)"
+          }
+        },
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": "1.24.0",
+          "extrainfo": "Ubuntu",
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx:1.24.0",
+            "cpe:/o:linux:linux_kernel"
+          ],
+          "scripts": {
+            "http-title": "Did not follow redirect to https://www.crosswindsystems.com/",
+            "http-server-header": "nginx/1.24.0 (Ubuntu)"
+          }
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "nginx",
+          "version": "1.24.0",
+          "extrainfo": "Ubuntu",
+          "cpe": [
+            "cpe:/a:igor_sysoev:nginx:1.24.0",
+            "cpe:/o:linux:linux_kernel"
+          ],
+          "scripts": {
+            "ssl-cert": "Subject: commonName=crosswindsystems.com\nSubject Alternative Name: DNS:crosswindsystems.com, DNS:staging.crosswindsystems.com, DNS:store.crosswindsystems.com, DNS:www.crosswindsystems.com\nNot valid before: 2026-04-27T00:43:35\nNot valid after:  2026-07-26T00:43:34",
+            "http-generator": "Flask 3.0 - Internal Build System",
+            "http-title": "CrossWind Systems - Digital Infrastructure Solutions",
+            "http-robots.txt": "7 disallowed entries \n/data/ /admin/ /archive/ /debug /install /uploads/ \n/customer-data",
+            "ssl-date": "TLS randomness does not represent time",
+            "http-server-header": "nginx/1.24.0 (Ubuntu)"
+          }
+        },
+        {
+          "port": 8080,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http-proxy",
+          "product": "Werkzeug/3.1.8 Python/3.9.25",
+          "version": null,
+          "extrainfo": null,
+          "cpe": [],
+          "scripts": {
+            "fingerprint-strings": "\n  FourOhFourRequest: \n    HTTP/1.1 404 NOT FOUND\n    Server: Werkzeug/3.1.8 Python/3.9.25\n    Date: Fri, 26 Jun 2026 01:01:37 GMT\n    Content-Type: text/html; charset=utf-8\n    Content-Length: 207\n    Connection: close\n    <!doctype html>\n    <html lang=en>\n    <title>404 Not Found</title>\n    <h1>Not Found</h1>\n    <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n  GetRequest: \n    HTTP/1.1 200 OK\n    Server: Werkzeug/3.1.8 Python/3.9.25\n    Date: Fri, 26 Jun 2026 01:01:36 GMT\n    Content-Type: application/json\n    Content-Length: 320\n    Connection: close\n    {\"authentication\":\"Use X-API-Key header\",\"endpoints\":[\"/api/v1/config\",\"/api/v1/users\",\"/api/v1/services\",\"/api/v1/auth/validate\"],\"flag\":\"CONF01_INTERNAL_API_EXPOSED\",\"service\":\"CrossWind Internal API\",\"status\":\"operational\",\"version\":\"1.0.0\",\"warning\":\"This is an INTERNAL API and should not be publicly accessible!\"}\n  HTTPOptions: \n    HTTP/1.1 200 OK\n    Server: Werkzeug/3.1.8 Python/3.9.25\n    Date: Fri, 26 Jun 2026 01:01:37 GMT\n    Content-Type: text/html; charset=utf-8\n    Allow: GET, OPTIONS, HEAD\n    Content-Length: 0\n    Connection: close\n  RTSPRequest: \n    <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\n    \"http://www.w3.org/TR/html4/strict.dtd\">\n    <html>\n    <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n    <title>Error response</title>\n    </head>\n    <body>\n    <h1>Error response</h1>\n    <p>Error code: 400</p>\n    <p>Message: Bad request version ('RTSP/1.0').</p>\n    <p>Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.</p>\n    </body>\n    </html>",
+            "http-server-header": "Werkzeug/3.1.8 Python/3.9.25",
+            "http-title": "Site doesn't have a title (application/json)."
+          }
+        }
+      ],
+      "os_matches": []
+    }
+  ],
+  "phases": [
+    {
+      "name": "discovery",
+      "command": "/usr/bin/nmap -sn -iL /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/targets-discovery.txt -oX /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-discovery.xml",
+      "targets": [
+        "104.20.23.154",
+        "172.66.147.243",
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3",
+        "40.160.5.105"
+      ],
+      "started_at": "2026-06-26T00:57:16.145825Z",
+      "duration_s": 0.29,
+      "exit_code": 0,
+      "raw_xml_path": "/home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-discovery.xml",
+      "error": null,
+      "blocked": false,
+      "troubleshooted": false
+    },
+    {
+      "name": "port-scan",
+      "command": "/usr/bin/nmap -sT -p T:1-65535,U:1-1000 --open -iL /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/targets-port-scan.txt -oX /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-port-scan.xml",
+      "targets": [
+        "104.20.23.154",
+        "172.66.147.243",
+        "40.160.5.105"
+      ],
+      "started_at": "2026-06-26T00:57:16.435677Z",
+      "duration_s": 213.02,
+      "exit_code": 0,
+      "raw_xml_path": "/home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-port-scan.xml",
+      "error": "raw-socket scans (-sS/-sU) need privilege; grant the nmap binary the capability with:  sudo setcap cap_net_raw,cap_net_admin,cap_net_bind_service+eip \"$(command -v nmap)\"  (or run under sudo)",
+      "blocked": true,
+      "troubleshooted": false
+    },
+    {
+      "name": "service-scan",
+      "command": "/usr/bin/nmap -sT -sV -sC -p T:80,443,2052,2053,2082,2083,2086,2087,2095,2096,8080,8443,8880 -iL /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/targets-service-scan-0.txt -oX /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-service-scan-0.xml ; /usr/bin/nmap -sT -sV -sC -p T:80,443,2052,2053,2082,2083,2086,2087,2095,2096,8080,8443,8880 -iL /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/targets-service-scan-1.txt -oX /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-service-scan-1.xml ; /usr/bin/nmap -sT -sV -sC -p T:22,80,443,8080 -iL /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/targets-service-scan-2.txt -oX /home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-service-scan-2.xml",
+      "targets": [
+        "104.20.23.154",
+        "172.66.147.243",
+        "40.160.5.105"
+      ],
+      "started_at": "2026-06-26T01:00:49.453298Z",
+      "duration_s": 137.03,
+      "exit_code": 0,
+      "raw_xml_path": "/home/f4d3/Documents/work/interns/network-recon-agent/artifacts/recon/20260626T005715Z-d71a77e2/phase-service-scan-2.xml",
+      "error": "raw-socket scans (-sS/-sU) need privilege; grant the nmap binary the capability with:  sudo setcap cap_net_raw,cap_net_admin,cap_net_bind_service+eip \"$(command -v nmap)\"  (or run under sudo)",
+      "blocked": true,
+      "troubleshooted": false
+    }
+  ],
+  "errors": [
+    "raw-socket scans (-sS/-sU) need privilege; grant the nmap binary the capability with:  sudo setcap cap_net_raw,cap_net_admin,cap_net_bind_service+eip \"$(command -v nmap)\"  (or run under sudo)"
+  ],
+  "nmap_version": "Nmap version 7.94SVN ( https://nmap.org )"
+}

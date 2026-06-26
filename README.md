@@ -7,6 +7,32 @@ off on.
 
 ## Structure
 
+Multiple Agents in this directory right now. Later there will be
+an orchestration layer that will deal with everyone and ensure the
+workflow is consistent.
+
+### Agents
+
+There is currently a *very basic* web pentester agent and a network
+recon agent. On the docket are:
+
+* File and Credential Discovery
+* DNS Enumeration (Subdomains, MX, TXT)
+* Rote Auditing (SSL/TLS Auditing, SSH Cipher Best Practices, SMB)
+* Vulnerability Scanning (wpscan, nuclei) & CVE Research
+* Active Directory Chains (bloodhound, bloodyAD)
+  `- this may be split into multiple agents
+* Reporting Agent (structured output from all agents -> pandoc)
+
+### Findings
+
+All agents emit findings against one standardized contract: [`findings.py`](findings.py)
+(the schema + `emit_finding` helper) keyed into the company findings dictionary
+[`findings_catalog.json`](findings_catalog.json). Two emission patterns, picked by agent
+type: **deterministic** agents call `findings.emit_finding(...)` directly; **LLM-driven**
+agents (e.g. the web pentester) wrap it in an in-process MCP tool the model calls mid-run.
+See the `findings.py` module docstring for details.
+
 ## Usage
 
 You can invoke the swarm at the orchestration level

@@ -1,0 +1,77 @@
+{
+  "sql-injection": {
+    "key": "sql-injection",
+    "title": "SQL Injection",
+    "description": "User-controllable input is incorporated into a SQL query without proper parameterization, allowing an attacker to alter the query's logic. Depending on the database and context this can be used to bypass authentication, read or modify arbitrary data, or in some cases achieve command execution on the database host.",
+    "probability": "High",
+    "impact": "High",
+    "recommendations": "Use parameterized queries (prepared statements) for all database access and never concatenate untrusted input into SQL. Apply least-privilege database accounts and validate/allow-list input where a fixed set of values is expected. See https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+    "references": [
+      "https://owasp.org/www-community/attacks/SQL_Injection",
+      "https://cwe.mitre.org/data/definitions/89.html"
+    ],
+    "tags": ["web", "injection"]
+  },
+  "reflected-xss": {
+    "key": "reflected-xss",
+    "title": "Reflected Cross-Site Scripting (XSS)",
+    "description": "Untrusted input is reflected into an HTTP response without adequate output encoding, allowing an attacker to execute arbitrary JavaScript in the victim's browser in the context of the vulnerable site. This can be used to steal session tokens, perform actions as the victim, or deface content.",
+    "probability": "Medium",
+    "impact": "Medium",
+    "recommendations": "Context-aware output encoding of all untrusted data rendered into HTML, attributes, JavaScript, or URLs. Adopt a strict Content-Security-Policy and set the HttpOnly flag on session cookies. See https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+    "references": [
+      "https://owasp.org/www-community/attacks/xss/",
+      "https://cwe.mitre.org/data/definitions/79.html"
+    ],
+    "tags": ["web", "injection"]
+  },
+  "weak-tls-config": {
+    "key": "weak-tls-config",
+    "title": "Weak TLS/SSL Configuration",
+    "description": "The service supports outdated protocol versions (e.g. SSLv3, TLS 1.0/1.1), weak cipher suites, or weak key exchange parameters. This exposes encrypted traffic to downgrade and cryptographic attacks, potentially allowing interception or tampering of data in transit.",
+    "probability": "Medium",
+    "impact": "Medium",
+    "recommendations": "Disable SSLv2/SSLv3 and TLS 1.0/1.1, enable only strong cipher suites with forward secrecy, and use 2048-bit+ keys / strong DH parameters. Follow the Mozilla TLS configuration guidance at https://wiki.mozilla.org/Security/Server_Side_TLS",
+    "references": [
+      "https://www.ssllabs.com/projects/best-practices/",
+      "https://cwe.mitre.org/data/definitions/326.html"
+    ],
+    "tags": ["tls", "audit", "network"]
+  },
+  "weak-ssh-ciphers": {
+    "key": "weak-ssh-ciphers",
+    "title": "Weak SSH Ciphers and Algorithms",
+    "description": "The SSH service offers weak or deprecated ciphers, MACs, or key exchange algorithms (e.g. CBC-mode ciphers, arcfour, MD5/SHA1 MACs, diffie-hellman-group1). These weaken the confidentiality and integrity guarantees of the SSH channel.",
+    "probability": "Low",
+    "impact": "Medium",
+    "recommendations": "Restrict the SSH daemon to strong, modern algorithms (e.g. chacha20-poly1305, aes-gcm, curve25519-sha256, hmac-sha2-512/256-etm) and disable legacy ciphers/MACs/KEX in sshd_config. See https://www.ssh.com/academy/ssh/sshd_config",
+    "references": [
+      "https://cwe.mitre.org/data/definitions/326.html"
+    ],
+    "tags": ["ssh", "audit", "network"]
+  },
+  "exposed-credentials": {
+    "key": "exposed-credentials",
+    "title": "Exposed Credentials or Secrets",
+    "description": "Credentials, API keys, or other secrets were discovered in an accessible location (e.g. configuration files, source repositories, world-readable shares, or web-accessible backups). Exposed secrets can be used directly to authenticate to systems or services.",
+    "probability": "Medium",
+    "impact": "High",
+    "recommendations": "Rotate all exposed secrets immediately and remove them from the exposed location and version-control history. Store secrets in a dedicated secrets manager, restrict file/share permissions, and add secret scanning to CI. See https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "references": [
+      "https://cwe.mitre.org/data/definitions/798.html"
+    ],
+    "tags": ["credentials", "discovery"]
+  },
+  "smb-v1": {
+    "key": "smb-v1",
+    "title": "SMB Version 1 Supported",
+    "description": "SMB Version 1 was discovered on the network. Version 1 SMB does not support a number of cryptographic protections necessary to prevent ----",
+    "probability": "Medium",
+    "impact": "Medium",
+    "recommendations": "Disable support for SMBv1 on the affectd endpoint(s).",
+    "references": [
+      "NEEDS REFERENCE"
+    ],
+    "tags": ["smb", "network"]
+  }
+}
