@@ -56,8 +56,8 @@ network-recon-agent/artifacts/recon/<run_id>/
 network-recon-agent/artifacts/recon/latest.json   # pointer to the newest report
 ```
 
-The methodology lives in [`phases.py`](network-recon-agent/phases.py) — edit
-`DEFAULT_PHASES` to change it. The output schema is in
+The methodology lives in [`phases.py`](network-recon-agent/phases.py)
+Edit `DEFAULT_PHASES` to change it. The output schema is in
 [`schema.py`](network-recon-agent/schema.py); downstream agents ingest a report with
 `load_report(path)`.
 
@@ -82,6 +82,10 @@ Without it, TCP degrades to `-sT` and UDP phases are flagged blocked (never sile
 ```
 
 ### Web Pentest Agent
+
+This little guy just uses playwright and Burp MCP to test things out :3
+I have not built out any sort of standardized output yet. He just futzes around
+with the web browser and gets you findings.
 
 ```bash
 ./.venv/bin/python ./web-pentester/agent.py \
